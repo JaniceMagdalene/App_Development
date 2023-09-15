@@ -1,0 +1,273 @@
+body
+{
+    overflow: hidden;
+    
+}
+.container{
+    
+    height: 120vh;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    overflow: hidden;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .container1 {
+    top:-110px;
+  width: 450px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color:black;
+  opacity: 90%;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  }
+  
+  .container .slider {
+  width: 200%;
+  position: relative;
+  transition: transform ease-out 0.3s;
+  display: flex;
+  }
+  
+  #register_toggle {
+  display: none;
+  }
+  
+  .container #register_toggle:checked + .slider {
+  transform: translateX(-50%);
+  }
+  
+  .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 1.5em 3em;
+  width: 50%;
+  }
+  
+  .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  color:#0dceda;
+  padding-bottom: 10px;
+  font-family: 'Maven Pro',sans-serif;
+  }
+  
+  form .form_control {
+  width: 100%;
+  position: relative;
+  overflow:hidden;
+  }
+  
+  form .form_control .label {
+  position: absolute;
+  top: 50%;
+  transition: transform ease 0.2s;
+  transform: translate(0%, -50%);
+  font-size: 0.75em;
+  user-select: none;
+  pointer-events: none;
+  color:#a6f2f8;
+  }
+  form.form_control.input::placeholder{
+  color:#a6f2f8;
+  }
+  
+  form .form_control .input {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:#6ef3d6;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: box-shadow ease 0.2s;
+  box-shadow: 0px 0px 0px #afdbf3, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  }
+  
+  form .form_control .input:focus,
+  form .form_control .input:valid {
+  box-shadow: 0px 0px 0px #afdbf3, 0px 0px 0px rgba(117, 171, 200, 0.25), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+  }
+  
+  form .form_control .input:focus + .label,
+  form .form_control .input:valid + .label {
+  transform: translate(-150%, -50%);
+  }
+  .form .input::placeholder {
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+  }
+  form button {
+  width: 80%;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Maven Pro',sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: box-shadow ease 0.1s;
+  box-shadow: 1.5px 1.5px 3px #8bdeeb, -1.5px -1.5px 3px rgba(102, 193, 253, 0.25), inset 0px 0px 0px #76c0e4, inset 0px -0px 0px #5dc3e3;
+  }
+  
+  form button:active {
+  box-shadow: 0px 0px 0px #8bdeeb, 0px 0px 0px rgba(102, 193, 253, 0.25/ 25%), inset 3px 3px 4px #76c0e4, inset -3px -3px 4px #5dc3e3;
+  }
+  
+  .bottom_text {
+  font-size: 0.9em;
+  color:#a6f2f8;
+  
+  }
+  
+  .bottom_text .swtich {
+  font-weight: 700;
+  cursor: pointer;
+  }
+  .bg-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    pointer-events: none; 
+    z-index: 1; 
+   
+  }
+  .bg-bubbles-container {
+    position: relative;
+  }
+  .bg-bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at 10% 20%, rgb(111, 231, 176) 0%, rgb(12, 112, 211) 100.2%);
+    bottom: -160px;
+    -webkit-animation: square 15s infinite;
+    animation: square 15s infinite;
+    transition-timing-function: linear;
+  }
+  .bg-bubbles li:nth-child(1) {
+    left: 10%;
+  }
+  .bg-bubbles li:nth-child(2) {
+    left: 10%;
+    width: 70px;
+    height: 80px;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+  }
+  .bg-bubbles li:nth-child(3) {
+    left: 25%;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  .bg-bubbles li:nth-child(4) {
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .bg-bubbles li:nth-child(5) {
+    left: 70%;
+  }
+  .bg-bubbles li:nth-child(6) {
+    left: 75%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    background-color: rgba(121, 250, 250, 0.2);
+  }
+  .bg-bubbles li:nth-child(7) {
+    left: 25%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 3s;
+            animation-delay: 7.5s;
+  }
+  .bg-bubbles li:nth-child(8) {
+    left: 55%;
+    width: 35px;
+    height: 35px;
+    -webkit-animation-delay: 3s;
+            animation-delay: 5s;
+      }
+  .bg-bubbles li:nth-child(9) {
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 9s;
+            animation-duration: 9s;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .bg-bubbles li:nth-child(10) {
+    left: 90%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 10s;
+  }
+  /* Add more bubbles */
+.bg-bubbles li:nth-child(11) {
+    left: 15%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+  
+  .bg-bubbles li:nth-child(12) {
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  
+  /* Add more animations as needed */
+  @-webkit-keyframes square {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-700px) rotate(600deg);
+    }
+  }
+  
+  @keyframes square {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-700px) rotate(600deg);
+    }
+  }
+  

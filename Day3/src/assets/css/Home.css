@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+  }
+  
+.home-container {
+
+  text-align: center;
+  background: linear-gradient(to top, #11325e 0%, #8fbde0 100%);
+}
+
+header {
+  background-color: #0f1010;
+  color: #fff;
+  padding: 1px;
+  margin-top:20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Adjust letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  }
+  
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}  
+.feature {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(39, 220, 162, 0.2);
+  margin: 20px;
+  padding: 10px;
+  width: 320px;
+  text-align: center;
+    
+    animation: glow 2s alternate infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      box-shadow: 
+        0 0 25px rgba(0, 255, 0, 0.6), /* Green glow */
+        0 0 30px rgba(111, 243, 234, 0.4), /* Blue glow */
+        0 0 40px rgba(126, 227, 158, 0.2); /* Green glow */
+    }
+  }
+  
+
+.image-slider {
+  margin-top: 0px;
+  text-align: center;
+ 
+}
+.janice{
+    
+        font-size: 1.2rem; /* Adjust the font size as needed */
+        color: #5770d2; /* Choose your desired text color */
+        text-transform: uppercase; /* Convert text to uppercase */
+        letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+      
+      
+}
+.alice-carousel {
+  width: 100%;
+}
+
+.alice-carousel img {
+  width: 85%;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.alice-carousel__next-btn,
+.alice-carousel__prev-btn {
+  display: none;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .marquee {
+    font-size: 1rem;
+    color: #e9e5e5; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Adjust letter spacing */
+    text-shadow: 2px 2px 4px rgba(243, 240, 240, 0.2); /* Add a subtle text shadow */
+
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 25s linear infinite;
+
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+  }
+}

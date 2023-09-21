@@ -1,0 +1,171 @@
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f3f8; /* Updated background color */
+    min-height: 100vh; /* Use min-height for responsiveness */
+  }
+  .mag{
+    margin-left: 30px;
+  }
+  /* Add these styles to your Dashboard.css file */
+.cardj {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cardj:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  /* Update your existing CSS styles */
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: space-between; 
+    margin-top: 30px;/* Adjust as needed */
+  }
+  
+  .cardm {
+    margin-top: 30px;
+    flex-basis: calc(25% - 20px); /* Set the width of each card */
+    margin-bottom: 20px; /* Adjust spacing between cards */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cardm:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #2a72a2;
+    color: #fff;
+    padding: 0.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  }
+  /* Cool Button Styles */
+  .logout-button {
+    padding: 0.8em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: #e0e0e0;
+    font-weight: bold;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    margin-right: 30px;
+    border-radius: 15px; /* Increased border radius to 15px */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .logout-button:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #66cf4c,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #bf7070
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px; /* Increased border radius to 15px */
+  }
+  
+  .logout-button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 15px; /* Increased border radius to 15px */
+  }
+  
+  
+  
+  /* Main content styles */
+  .main-content {
+    display: flex;
+    flex: 1;
+    
+    background-color: #f7f9fc; /* Updated background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #35495e;
+    color: #fff;
+    width: 10%;
+    padding: 0.5rem;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-bottom: 1rem;
+    margin-left: 30px
+  }
+  
+  /* Link styles */
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+;
+  }
+  
+  .nav-item a:hover {
+    color: #ffdb58; /* Change to a different color on hover */
+  }
+  
+  /* Content styles */
+  .content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Example card styles for dashboard content */
+  

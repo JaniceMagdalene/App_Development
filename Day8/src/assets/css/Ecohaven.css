@@ -1,0 +1,194 @@
+.diet {
+    background-size: cover;
+    opacity: 90%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: flex-start;
+
+  }
+  
+  .menu {   
+   margin-left: -450px;
+    padding: 20px;
+    border-radius: 9px;
+    text-align: center;
+    height: 250vh;
+    width: 100%;
+    max-width: 1000px; /* Increase the max-width for wider cards */
+  }
+  
+  .meals {
+    
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+  }
+  
+
+  /* Add a keyframes animation for step highlighting */
+@keyframes highlightStep {
+    0% {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+    50% {
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+    100% {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+  }
+  
+  /* Style the HOW section */
+  .how {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 190px;
+  }
+  
+  .how .words {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 190px;
+    color: darkblue;
+  }
+  
+  /* Style the HOW card */
+  .how-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increased shadow depth */
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 150%; /* Increase the width as desired */
+    max-width: 1000px; /* Set a maximum width to control card width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  /* Style the ordered list */
+  .how-card ol {
+    list-style-type: none;
+    counter-reset: step;
+    text-align: left;
+  }
+  
+  /* Style each step */
+  .how-card li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    position: relative;
+    text-align: left
+  }
+  
+  .how-card li::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+  }
+  
+  /* Add hover effect to steps */
+  .how-card li:hover::before {
+    animation: highlightStep 2s infinite;
+  }
+  
+  /* Add flickering border animation */
+  @keyframes flickerja {
+    0%, 100% {
+      border-color: #6ae6e89d;
+      box-shadow: 0px 0px 10px #1d4044, 0px 0px 0px rgb(123, 102, 125), inset 3px 3px 3px #8578fa, inset 3px 3px 3px #7dc7dd;
+    }
+    50% {
+      border-color: #80d8e8;
+      box-shadow: 0px 0px 10px #244240, 0px 0px 10px rgb(123, 102, 125), inset 3px 3px 3px #8578fa, inset 3px 3px 5px #7dc7dd;
+    }
+  }
+  
+  .meal, .luu, .din {
+    margin: 20px;
+    padding: 10px;
+    border: 0.5px solid #8de2df9d;
+    border-radius: 9px; /* Adjust the border radius to create rectangle shape */
+    background-color: #f9f9f9;
+    width: 45%; /* Adjust the width for wider cards */
+    height: 300px; /* Adjust the height as desired */
+    animation: flickerja 2s ease-in-out infinite;
+  }
+  
+  
+  /* Style the meal sections container */
+
+  
+  /* Style each meal section */
+  .meal {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover effect for meal sections */
+  .meal:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style the title of each meal section */
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Style the list of items */
+  .kif{
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style each item in the list */
+  .divii {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #555;
+    margin-left: ;
+  }
+  
+  /* Style the item bullet */
+  .divii::before {
+    content: "•";
+    color: #b90a73;
+    margin-right: 5px;
+  }
+  
+  .dd {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-style: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+    margin-left: 280px;
+  }
+  

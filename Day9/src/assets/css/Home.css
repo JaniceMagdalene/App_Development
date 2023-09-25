@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+.home-container {
+text-align: center;
+background: linear-gradient(to top, #11325e 0%, #c2dcf1 100%);
+}
+.marquee-container {
+  width: 100%; /* Adjust this as needed */
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: marquee 20s linear infinite; /* Adjust duration as needed */
+  overflow: hidden;
+}
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.chatbot-icon:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust this value based on the width of your text */
+  }
+}
+
+header {
+background-color: #baeded;
+color: #fff;
+padding: 1px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333; /* Text color */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Adjust letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-left: -20px;
+}
+
+.feature {
+  background-color: #daf2f3; /* Update background color to a cool blue */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(39, 220, 162, 0.2);
+  margin: 20px;
+  padding: 10px;
+  width: 320px;
+  text-align: center;
+  animation: glow1 2s alternate infinite, backgroundChange 5s infinite; /* Add background change animation */
+}
+
+@keyframes glow1 {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow:
+      0 0 30px rgba(171, 230, 181, 0.6), /* Green glow */
+      0 0 30px rgba(147, 216, 221, 0.6), /* Blue glow */
+      0 0 45px rgba(7, 155, 188, 0.6); /* Green glow */
+  }
+}
+
+
+.janice{
+  
+      font-size: 1.2rem; /* Adjust the font size as needed */
+      color: #5770d2; /* Choose your desired text color */
+      text-transform: uppercase; /* Convert text to uppercase */
+      letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+
+
+.card-slider {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  padding: 50px;
+  margin-top: -20px;
+  width: 320px;
+  margin-left: 40px;
+
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: glow 2s alternate infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.read-more-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more-link:hover {
+  color: #75cba9; /* Link color on hover */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+.features {
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature {
+  width: 80%;
+}
+}

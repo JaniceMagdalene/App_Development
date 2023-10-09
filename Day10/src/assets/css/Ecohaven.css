@@ -1,0 +1,87 @@
+/* Ecohaven.css */
+
+/* Header styles */
+.dd {
+  font-size: 26px;
+  color: #2134d9;
+  margin-left: 450px;
+}
+
+/* Meal section styles */
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Adjust to start from the left */
+  
+  margin-left: 30px; /* Add margin-left to push meals away from the left margin */
+}
+
+.meal {
+  width: 200px; /* Set a fixed width to make the cards square */
+  height: 220px; /* Set a fixed height to make the cards square */
+  margin-left: 80px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.meal:hover {
+  transform: scale(1.05);
+}
+
+.meal h2 {
+  font-size: 24px;
+  color: #71b0da;
+  margin-bottom: 10px;
+}
+
+.kif {
+  list-style: none;
+  padding: 0;
+}
+
+.divii {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* "How it works" section styles */
+.how {
+  margin-top: 40px;
+  text-align: center;
+  width: 70%;
+  margin-left: 200px;
+  margin-bottom: 40px;
+}
+
+.words {
+  font-size: 28px;
+  color: #1720cd;
+}
+
+.how-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.how-card ol {
+  list-style-type: decimal;
+  padding-left: 100px;
+}
+
+.how-card li {
+  font-size: 16px;
+  color: #666;
+  margin: 12px 0;
+}
+
+/* Footer styles (you can customize this further) */

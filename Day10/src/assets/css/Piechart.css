@@ -1,0 +1,21 @@
+/* PieChart.css (if you want to create a separate CSS file) */
+.pie-chart-container {
+    position: relative;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the chart horizontally */
+  }
+  
+  /* Style for the chart title */
+  .pie-chart-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the canvas element */
+  .pie-chart-canvas {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  }
+  
